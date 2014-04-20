@@ -1,0 +1,38 @@
+@import "compass/css3/transition";
+
+.spinner {
+  display: inline-block;
+  opacity: 0;
+  width: 0;
+
+  @include transition-property(opacity);
+  @include transition-duration(0.25s);
+
+  @include transition-property(width);
+  @include transition-duration(0.25s);
+}
+
+.has-spinner.loading {
+  cursor: progress;
+}
+
+.has-spinner.loading .spinner {
+  opacity: 1;
+  width: auto; /* This doesn't work, just fix for unknown width elements */
+}
+
+.has-spinner.btn-mini.loading .spinner {
+  width: 10px;
+}
+
+.has-spinner.btn-small.loading .spinner {
+  width: 13px;
+}
+
+.has-spinner.btn.loading .spinner {
+  width: 16px;
+}
+
+.has-spinner.btn-large.loading .spinner {
+  width: 19px;
+}

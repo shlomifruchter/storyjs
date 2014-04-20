@@ -1,0 +1,111 @@
+$iconSpritePath: '/images/glyphicons-halflings.png';
+
+// Import compass components
+@import 'compass/css3/inline-block';
+@import 'compass/css3/border-radius';
+@import 'compass/utilities/text/ellipsis';
+
+// Include 3rd party libraries
+@import 'sass-bootstrap/lib/bootstrap';
+$fa-font-path: "../bower_components/font-awesome/fonts"; // Setup fonts path - must before importing font-awesome
+@import 'font-awesome/scss/font-awesome';
+
+// Include project sass header files
+@import 'mixins';
+@import 'globals';
+@import 'spinner';
+
+html, body {
+  //width: 100%;
+  //height: 100%;
+  padding: 0;
+  margin: 0;
+  //font-size: 62.5%;
+  color: $black;
+  background-color: $main-background-color;
+  overflow: hidden;
+}
+
+// Root CSS class - all css rules must be children of this class
+.name-your-app {
+  font-size: $medium;
+
+  .main-container {
+    width: 100%;
+
+    .header{
+      display: block;
+    }
+
+    .footer {
+      display: block;
+    }
+
+    .header-container {
+
+      .app-icon {
+        font-size: 3rem;
+        float: left;
+        padding: 1rem;
+      }
+
+      margin-bottom: 5px;
+
+      // Not logged in state
+      .not-logged-in {
+        display: block;
+      }
+
+      .logged-in {
+        display: none;
+      }
+
+      // Logged in state
+      &.logged-in {
+        .not-logged-in {
+          display: none;
+        }
+
+        .logged-in {
+          display: block;
+        }
+      }
+    }
+
+    .main {
+      .story{
+        .fragments {
+          .fragment {
+            display: inline-block;
+            padding-right: $small;
+          }
+        }
+      }
+
+      .story-list {
+        .stories-container {
+          display: inline-block;
+
+          .story-list-item {
+            display: inline-block;
+            width: 30%;
+            height: 5rem;
+            background-color: #FCFBFF;
+            border: 1px solid #F7F5FF;
+            padding-left: 1rem;
+            margin: 1rem;
+            float: left;
+            cursor: pointer;
+            @include border-radius(5px);
+            @include ellipsis();
+
+            &:hover {
+              background-color: #D3CBEB;
+              border: 1px solid #CAC0EB;
+            }
+          }
+        }
+      }
+    }
+  }
+}

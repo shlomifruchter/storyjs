@@ -1,0 +1,31 @@
+
+@mixin background-image($url) {
+  background-image: url("../images/" + $url);
+}
+
+@mixin icon-image($url) {
+  background-image: url("../images/" + $url);
+  background-repeat:no-repeat;
+  background-position:center;
+}
+/*
+@mixin cover-image($url) {
+  background-image: url("../images/" + $url);
+  background-repeat:no-repeat;
+  background-position:center;
+  background-size: cover;
+}
+*/
+
+@mixin contain-image($url) {
+  background-image: url("../images/" + $url);
+  background-repeat:no-repeat;
+  background-position:center;
+  background-size: contain;
+}
+
+@mixin centralizedBoxs() {
+  div {display: table}
+  div.centralized{display:table-cell; vertical-align: middle; text-align: center;}
+}
+
