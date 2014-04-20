@@ -36,9 +36,13 @@ npm install
 ```
 
 **Run server:**
+```sh
 cd /src/server
 sails lift
+```
 
 **Launch client in browser:**
+```sh
 cd /src/client
 grunt server
+```
