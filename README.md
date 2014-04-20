@@ -8,13 +8,11 @@ This is a sample story telling app using Sails.js, Marionette, Backbone and Mong
 * MongoDB - Download and Install [MongoDB](http://www.mongodb.org/downloads) - Make sure it's running on the default port (27017).
 
 ### Tools Prerequisites
-* NPM - Node.js package manager, should be installed when you install node.js.
-* Bower - Web package manager, installing [Bower](http://bower.io/) is simple when you have npm:
-* Grunt - Download and Install [Grunt](http://gruntjs.com).
+* Bower - [Bower](http://bower.io/)
+* Grunt - [Grunt](http://gruntjs.com).
 *   Ruby - you need Ruby and Compass to compile scss files to css. Install ruby for [Windows](http://rubyinstaller.org/) or [OSX](https://rvm.io/rvm/install).
 
-    Make sure you add Ruby to PATH: e.g. 'c:\Ruby\bin', then
-    run:
+    Make sure you add Ruby to PATH: e.g. 'c:\Ruby\bin', then run:
     ```s
     gem update --system
     gem install compass
