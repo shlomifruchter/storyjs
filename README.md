@@ -1,4 +1,4 @@
-story.js
+story.js!
 ==================
 
 This is a sample story telling app using Sails.js, Marionette, Backbone and Mongodb.
