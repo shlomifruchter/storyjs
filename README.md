@@ -1,9 +1,7 @@
-whatsyourstory
-==============
+story.js
+=================
 
-Story telling app using Sails.js, Marionette, Backbone and Mongodb
-
-Prerequisites:
+This is a sample story telling app using Sails.js, Marionette, Backbone and Mongodb.
 
 ## Prerequisites
 * Node.js - Download and Install [Node.js](http://www.nodejs.org/download/). You can also follow [this gist](https://gist.github.com/isaacs/579814) for a quick and easy way to install Node.js and npm
