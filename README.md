@@ -11,6 +11,15 @@ This is a sample story telling app using Sails.js, Marionette, Backbone and Mong
 * NPM - Node.js package manager, should be installed when you install node.js.
 * Bower - Web package manager, installing [Bower](http://bower.io/) is simple when you have npm:
 * Grunt - Download and Install [Grunt](http://gruntjs.com).
+* Ruby - you need Ruby and Compass to compile scss files to css:
+- Windows: http://rubyinstaller.org/.
+- OSX: https://rvm.io/rvm/install
+Make sure you add Ruby to PATH: e.g. 'c:\Ruby\bin'
+Open command line and run:
+```s
+gem update --system
+gem install compass
+```
 
 ## Getting started
 
