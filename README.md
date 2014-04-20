@@ -9,7 +9,7 @@ This is a sample story telling app using Sails.js, Marionette, Backbone and Mong
 
 ### Tools Prerequisites
 * [Bower](http://bower.io/)
-* [Grunt](http://gruntjs.com).
+* [Grunt](http://gruntjs.com)
 * Ruby - you need Ruby and Compass to compile scss files to css. Install ruby for [Windows](http://rubyinstaller.org/) or [OSX](https://rvm.io/rvm/install).
 
     Make sure you add Ruby to PATH: e.g. 'c:\Ruby\bin', then run:
